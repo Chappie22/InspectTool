@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/Icons">
+        <file>Icons/Add file.png</file>
+        <file>Icons/Add Folder.png</file>
+        <file>Icons/closed folder.png</file>
+        <file>Icons/file.png</file>
+        <file>Icons/Highlight .png</file>
+        <file>Icons/x-button.png</file>
+        <file>Icons/opn_folder.png</file>
+        <file>Icons/Editor.png</file>
+        <file>Icons/rgb.png</file>
+        <file>Icons/exit.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="2">
+     <widget class="QTreeWidget" name="treeWidget">
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="AddGroup_button">
+      <property name="text">
+       <string>Add Group</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resoursec.qrc">
+        <normaloff>:/new/Icons/Icons/Add Folder.png</normaloff>:/new/Icons/Icons/Add Folder.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="Highlight_button">
+      <property name="text">
+       <string>Highlight</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resoursec.qrc">
+        <normaloff>:/new/Icons/Icons/Highlight .png</normaloff>:/new/Icons/Icons/Highlight .png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="AddControl_button">
+      <property name="text">
+       <string>Add Control</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resoursec.qrc">
+        <normaloff>:/new/Icons/Icons/Add file.png</normaloff>:/new/Icons/Icons/Add file.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="RemoveGroupControl_button">
+      <property name="text">
+       <string>Remove Group/Control</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resoursec.qrc">
+        <normaloff>:/new/Icons/Icons/x-button.png</normaloff>:/new/Icons/Icons/x-button.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>562</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionAdd_Group"/>
+    <addaction name="actionAdd_Control"/>
+    <addaction name="actionRemove_Group_Control"/>
+    <addaction name="separator"/>
+    <addaction name="actionHiglight"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionCreator_s_Info"/>
+   </widget>
+   <widget class="QMenu" name="menuCostumization">
+    <property name="title">
+     <string>Customization </string>
+    </property>
+    <addaction name="actionChange_Highlight_Color"/>
+   </widget>
+   <addaction name="menuTools"/>
+   <addaction name="menuCostumization"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd_Group"/>
+   <addaction name="actionAdd_Control"/>
+   <addaction name="actionRemove_Group_Control"/>
+   <addaction name="actionHiglight"/>
+   <addaction name="actionChange_Highlight_Color"/>
+   <addaction name="actionCreator_s_Info"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAdd_Group">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/Add Folder.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add Group</string>
+   </property>
+  </action>
+  <action name="actionAdd_Control">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/Add file.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add Control</string>
+   </property>
+  </action>
+  <action name="actionRemove_Group_Control">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/x-button.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Remove Group/Control</string>
+   </property>
+  </action>
+  <action name="actionHiglight">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/Highlight .png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Higlight</string>
+   </property>
+  </action>
+  <action name="actionCreator_s_Info">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/Editor.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Creator`s Info</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/exit.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionChange_Highlight_Color">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Icons/Icons/rgb.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Change Highlight Color</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resoursec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
